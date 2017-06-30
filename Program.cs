@@ -2,7 +2,8 @@ class Program {
     /// <summary>
     /// an tiny arithmetic-operation function by QQ:20437023
     /// MIT License Copyright (c) 2017 zhangxx2015
-    /// 一个四则运算函数,支持运算符优先级 仅 20 行代码, 
+    ///
+    /// 一个四则运算函数,支持运算符优先级 仅 22 行代码, 
     /// 实现了:
     ///     加法(+),
     ///     减法(-),
@@ -10,7 +11,7 @@ class Program {
     ///     除法(/),
     ///     取余(%),
     /// 
-    /// an arithmetic-operation function,support PRI., only 20 lines of code,
+    /// an arithmetic-operation function,support PRI., only 22 lines of code,
     /// Implement features:
     ///     addition      (+),
     ///     subduction    (-),
@@ -32,6 +33,8 @@ class Program {
         if (-1 != op) return Eval(express.Substring(0, op)) + Eval(express.Substring(1 + op));
         op = express.IndexOf('-');
         if (-1 != op) return Eval(express.Substring(0, op)) - Eval(express.Substring(1 + op));
+        op = express.IndexOf('%');
+        if (-1 != op) return Eval(express.Substring(0, op)) % Eval(express.Substring(1 + op));
         op = express.IndexOf('*');
         if (-1 != op) return Eval(express.Substring(0, op)) * Eval(express.Substring(1 + op));
         op = express.IndexOf('/');
