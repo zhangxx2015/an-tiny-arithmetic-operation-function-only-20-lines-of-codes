@@ -43,9 +43,9 @@ class Program {
     }
     // Examples
     static void Main() {
-        var ret1 = -11 + (1.2 + 3.4)*5.6/((7.8 + 9) - 10);
-        var ret2 = Eval("-11 + (1.2 + 3.4) * 5.6 / ((7.8 + 9) - 10)");
-        System.Console.WriteLine("-11 + (1.2 + 3.4) * 5.6 / ((7.8 + 9) - 10) = {0},validate:{1}", ret1, ret1 == ret2);
+        var exp1 = -11 + (1.2 + 3.4)*5.6/((7.8 + 9) - 10);
+        var exp2 = Eval("-11 + (1.2 + 3.4) * 5.6 / ((7.8 + 9) - 10)");
+        System.Console.WriteLine("-11 + (1.2 + 3.4) * 5.6 / ((7.8 + 9) - 10) = {0},validate:{1}", exp1, exp1 == exp2);
         // benchmark
         var myTicks = System.Environment.TickCount;
         for (var i = 0; i < 1000000; i++) {
