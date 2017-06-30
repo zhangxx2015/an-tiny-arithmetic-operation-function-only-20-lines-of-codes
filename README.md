@@ -1,0 +1,6 @@
+addition      '+'
+subduction    '-'
+multiplication'*'
+division      '/'
+remainder     '%'
+PRI           '('  ')'
