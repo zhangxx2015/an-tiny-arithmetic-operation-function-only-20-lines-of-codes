@@ -1,6 +1,6 @@
 class Program {
     /// <summary>
-    /// an tiny arithmetic-operation function by QQ:20437023
+    /// an tiny arithmetic-operation function by QQ:20437023 liaisonme@hotmail.com
     /// MIT License Copyright (c) 2017 zhangxx2015
     ///
     /// 一个四则运算函数,支持运算符优先级 仅 22 行代码, 
